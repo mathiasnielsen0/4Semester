@@ -4,7 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using I4GUI;
+using Prism.Commands;
 using Prism.Mvvm;
 
 namespace AgentExercise
@@ -23,12 +25,6 @@ namespace AgentExercise
         }
 
         
-
-        public void LeftBtnCmd()
-        {
-
-        }
-
         #region Properties
 
         int currentIndex = -1;
@@ -47,6 +43,8 @@ namespace AgentExercise
             }
         }
 
+        
+
         private Agent _currentAgent = null;
         public Agent CurrentAgent
         {
@@ -61,6 +59,67 @@ namespace AgentExercise
                 //}
             }
         }
+
+        #endregion
+
+        #region Commands
+
+
+        //leftBtnCmd
+
+        private ICommand _leftBtnCmd;
+        public ICommand LeftBtnCmd
+        {
+            get
+            {
+                return _leftBtnCmd ?? (_leftBtnCmd = new DelegateCommand(LeftBtnCmdHandler));
+            }
+        }
+
+        void LeftBtnCmdHandler()
+        {
+            if (CurrentIndex != 0)
+                CurrentIndex -= 1;
+        }
+
+        //RightBtnCmd
+
+        private ICommand _rightBtnCmd;
+
+        public ICommand RightBtnCmd
+        {
+            get
+            {
+                return _rightBtnCmd ?? (_rightBtnCmd = new DelegateCommand(RightBtnCmdHandler));
+            }
+        }
+
+        void RightBtnCmdHandler()
+        {
+            if (CurrentIndex < Agents.Count() -1)
+            ++CurrentIndex;
+        }
+
+        //Add new
+
+
+        private ICommand _addNewAgentCmd;
+
+        public ICommand AddNewAgentCmd
+        {
+            get
+            {
+                return _addNewAgentCmd ?? (_addNewAgentCmd = new DelegateCommand(AddNewAgentCmdHandler));
+            }
+        }
+
+        void AddNewAgentCmdHandler()
+        {
+            Agents.Add(new Agent("N/A", "New Agent", "N/A", "N/A"));
+        }
+
+        //Exit
+
 
         #endregion
     }

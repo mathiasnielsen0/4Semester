@@ -63,3 +63,28 @@ C:\Users\mathias\Desktop\4. Semester\I4GUI\AgentExercis07\Exercise2\AgentExercis
 C:\Users\mathias\Desktop\4. Semester\I4GUI\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.GenerateResource.cache
 C:\Users\mathias\Desktop\4. Semester\I4GUI\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.CoreCompileInputs.cache
 C:\Users\mathias\Desktop\4. Semester\I4GUI\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.CopyComplete
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\AgentExercise.exe.config
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\AgentExercise.exe
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\AgentExercise.pdb
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\CommonServiceLocator.dll
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.dll
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.Wpf.dll
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.pdb
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.xml
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.Wpf.pdb
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\bin\Debug\Prism.Wpf.xml
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csprojAssemblyReference.cache
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\MainWindow.g.cs
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\App.g.cs
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise_MarkupCompile.cache
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise_MarkupCompile.lref
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\MainWindow.baml
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.g.resources
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.Properties.Resources.resources
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.GenerateResource.cache
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.CoreCompileInputs.cache
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.csproj.CopyComplete
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.exe
+C:\Users\Mathias\source\repos\mathiasnielsen0\4Semester\AgentExercis07\Exercise2\AgentExercise\obj\Debug\AgentExercise.pdb

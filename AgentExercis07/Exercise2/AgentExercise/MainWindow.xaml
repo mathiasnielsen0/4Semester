@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgentExercise"
         mc:Ignorable="d"
-        Title="MainWindow" Height="380" Width="550">
+        Title="MainWindow" Height="275" Width="550">
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
@@ -13,13 +13,12 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="3*"/>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -29,48 +28,36 @@
 
         <Menu DockPanel.Dock="Top" Grid.Row="0" Grid.ColumnSpan="3">
             <MenuItem Header="File">
-                <MenuItem Header="Exit"/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Agent">
-                <MenuItem Header="Previous"/>
-                <MenuItem Header="Next"/>
-                <MenuItem Header="Add New"/>
+                <MenuItem Header="Previous" Command="{Binding Path=LeftBtnCmd}"/>
+                <MenuItem Header="Next" Command="{Binding Path=RightBtnCmd}"/>
+                <MenuItem Header="Add New" Command="{Binding Path=AddNewAgentCmd}"/>
             </MenuItem>
         </Menu>
+        
+        <ToolBar Grid.Row="1" Grid.ColumnSpan="3">
+            <Button Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Click="FontSizeUpClick"/>
+            <Button Content="-" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" Click="FontSizeDownClick"/>
+            <Button Command="{Binding Path=LeftBtnCmd}" Content="&lt;" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+            <Button Command="{Binding Path=RightBtnCmd}" Content="&gt;" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+        </ToolBar>
 
-        <ToolBarTray DockPanel.Dock="Top" Grid.Row="1" Grid.ColumnSpan="3">
-            <ToolBar>
-                <Button Content="+" HorizontalAlignment="Center"/>
-                <Button Content="-" HorizontalAlignment="Center"/>
-                <Button Content="&lt;" HorizontalAlignment="Center"/>
-                <Button Content="&gt;" HorizontalAlignment="Center"/>
-            </ToolBar>
-        </ToolBarTray>
-
-<Label Name="IdLabel" Grid.Row="2" Grid.Column="0" Content="Id" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="IdLabel" Grid.Row="2" Grid.Column="0" Content="Id" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="CodeNameLabel" Grid.Row="3" Grid.Column="0" Content="Codename" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="SpecialityLabel" Grid.Row="4" Grid.Column="0" Content="Speciality" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="AssignmentLabel" Grid.Row="5" Grid.Column="0" Content="Assignment" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"/>
-        <Grid Grid.Column="1" Grid.Row="6">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1.7*"/>
-            </Grid.ColumnDefinitions>
-            <Button Command="{Binding LeftBtnCmd}" Grid.Column="0" Name="leftBtn" Margin="12,4" Content="&lt;" HorizontalAlignment="Left" Width="50"/>
-            <Button Grid.Column="1" Name="rightBtn" Margin="5,4" Content="&gt;" HorizontalAlignment="Left" Width="50"/>
-           </Grid>
-        <TextBox Name="IdTextBox" Grid.Row="2" Grid.Column="1" Margin="10,3"/>
-        <TextBox  Name="CodeNameTextBox" Grid.Row="3" Grid.Column="1" Margin="10,3"/>
-        <TextBox Name="SpecialityTextBox" Grid.Row="4" Grid.Column="1" Margin="10,3"/>
-        <TextBox  Name="AssignmentTextBox" Grid.Row="5" Grid.Column="1" Margin="10,6"/>
+        
+        <TextBox Name="IdTextBox" Grid.Row="2" Grid.Column="1" Margin="10,3" Text="{Binding Path=CurrentAgent.ID}"/>
+        <TextBox Name="CodeNameTextBox" Grid.Row="3" Grid.Column="1" Margin="10,3" Text="{Binding Path=CurrentAgent.CodeName}"/>
+        <TextBox Name="SpecialityTextBox" Grid.Row="4" Grid.Column="1" Margin="10,3" Text="{Binding Path=CurrentAgent.Speciality}"/>
+        <TextBox  Name="AssignmentTextBox" Grid.Row="5" Grid.Column="1" Margin="10,6" Text="{Binding Path=CurrentAgent.Assignment}"/>
         <ListBox Name="AgentListBox" Grid.Column="2" Grid.Row="2" Grid.RowSpan="4" Margin="8"
-                 SelectedItem="{Binding CurrentAgent}" 
-                 ItemsSource="{Binding Agents}" 
-                 SelectedIndex="{Binding CurrentIndex}"
+                 SelectedItem="{Binding Path=CurrentAgent}" 
+                 ItemsSource="{Binding Path=Agents}" 
+                 SelectedIndex="{Binding Path=CurrentIndex}"
                  IsSynchronizedWithCurrentItem="True" 
-                 DisplayMemberPath="Name"/>
-        <Button Name ="AddNewBtn" Content="Add New" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" Width="50" Margin="12,6" 
-                Height="20" VerticalAlignment="Top" FontSize="10"/>
+                 DisplayMemberPath="CodeName"/>
     </Grid>
 </Window>

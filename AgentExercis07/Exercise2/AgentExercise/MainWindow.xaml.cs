@@ -25,5 +25,20 @@ namespace AgentExercise
         {
             InitializeComponent();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FontSizeUpClick(object sender, RoutedEventArgs e)
+        {
+            this.FontSize++;
+        }
+
+        private void FontSizeDownClick(object sender, RoutedEventArgs e)
+        {
+            this.FontSize--;
+        }
     }
 }
