@@ -1,0 +1,34 @@
+﻿<Window x:Class="AgentExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AgentExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="IdLabel" Grid.Row="0" Grid.Column="0" Content="Id" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="CodeNameLabel" Grid.Row="1" Grid.Column="0" Content="Codename" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="SpecialityLabel" Grid.Row="2" Grid.Column="0" Content="Speciality" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="AssignmentLabel" Grid.Row="3" Grid.Column="0" Content="Assignment" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"/>
+        <TextBox Text="{Binding ElementName=IdTextBlock, Path=Text, Mode=TwoWay}" Name="IdTextBox" Grid.Row="0" Grid.Column="1" Margin="10,8"/>
+        <TextBox Text="{Binding ElementName=CodenameTextBlock, Path=Text, Mode=TwoWay}" Name="CodeNameTextBox" Grid.Row="1" Grid.Column="1" Margin="10,8"/>
+        <TextBox Text="{Binding ElementName=SpecialityTextBlock, Path=Text, Mode=TwoWay}" Name="SpecialityTextBox" Grid.Row="2" Grid.Column="1" Margin="10,8"/>
+        <TextBox Text="{Binding ElementName=AssignmentTextBlock, Path=Text, Mode=TwoWay}" Name="AssignmentTextBox" Grid.Row="3" Grid.Column="1" Margin="10,8"/>
+        <TextBlock Name="IdTextBlock" Grid.Row="0" Grid.Column="2" Margin="10,8"/>
+        <TextBlock Name="CodenameTextBlock" Grid.Row="1" Grid.Column="2" Margin="10,8"/>
+        <TextBlock Name="SpecialityTextBlock" Grid.Row="2" Grid.Column="2" Margin="10,8"/>
+        <TextBlock Name="AssignmentTextBlock" Grid.Row="3" Grid.Column="2" Margin="10,8" />
+    </Grid>
+</Window>
